@@ -1,0 +1,70 @@
+.profile {
+    /* margin: 2vh 0; */
+    padding: 4vh 2vw;
+
+    width: 25vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vw;
+    border-radius: calc(0.7vh + 0.7vw);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.profile img {
+    max-width: 12vw;
+    border-radius: calc(0.7vh + 0.7vw);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.profile .details p {
+    margin-top: 0;
+    margin-bottom: 2vh;
+    font-family: 'Overlock';
+    font-size: clamp(calc(0.5vh + 0.5vw), 1.2rem, calc(1vh + 1vw));
+}
+
+.profile .details p:last-child {
+    margin-bottom: 0;
+}
+
+.profile .details p#name {
+    font-family: 'Overlock';
+    font-size: clamp(calc(0.5vh + 0.5vw), 1.5rem, calc(1.5vh + 1.5vw));
+    margin-bottom: 2vh;
+}
+
+.profile1 .profile,
+.profile4 .profile {
+    background-color: #63D9D3;
+}
+
+.profile2 .profile,
+.profile5 .profile {
+    background-color: #42a7ff;
+    /* background-color: #92caff; */
+}
+
+.profile3 .profile,
+.profile6 .profile {
+    background-color: #e9c81c;
+}
+
+@media screen and (max-width: 1000px) {
+    .profile {
+        flex-direction: column-reverse;
+        gap: 2vh;
+    }
+
+    .profile .details p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .profile {
+        width: 40vw;
+    }
+}
